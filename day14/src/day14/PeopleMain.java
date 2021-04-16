@@ -45,6 +45,24 @@ public class PeopleMain {
 //		System.out.println(p.toString());
 		//셋이 같은거
 		
+		//PeopleService 클래스 객체 선언
+		PeopleService ps = new PeopleService();
+		System.out.println("listPrint 호출 전");
+		ps.listPrint(peopleList);
+		System.out.println("listPrint 호출 끝");
+		
+		for(int i = 0; i < peopleList.size(); i++) {
+			System.out.println(peopleList.get(i));
+		}
+		
+//		ps.peoplePrint(p2);
+//		
+//		ps.peoplePrint(p);
+//		
+//		
+		
+		
+		
 	}
 
 }
