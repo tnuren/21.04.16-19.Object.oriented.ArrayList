@@ -11,7 +11,7 @@ public class Student {
 	 */
 	
 	
-	
+	// 필드 지정
 	private String name;
 	private String phone;
 	private String address;

@@ -8,7 +8,7 @@ public class StudentMain {
 		
 		Student s = new Student();
 //		setter를 이용하여 필드값 지정		
-//		s.name = "학생";
+//		s.name = "학생"; => private으로 지정했기 때문에 접근 불가.
 		s.setName("학생");
 //		s.phone = "010-1111-2222";
 		s.setPhone("010-1111-2222");
@@ -41,13 +41,17 @@ public class StudentMain {
 		
 		// stuList의 0번 인덱스에 저장한 s 의 name값 출력해보기
 		System.out.println(stuList.get(0).getName());
+//		System.out.println(stuList.get(0).name);
 		System.out.println(stuList.get(1).getName());
+//		System.out.println(stuList.get(1).name);
 	
 		String var1 = stuList.get(0).getName();
 		System.out.println(var1);
 		
 		stuList.get(1).setName("학생2이름변경"); 
 		System.out.println(stuList.get(1).getName());
+//		stuList.get(1).name = "학생2이름변경";
+//		System.out.println(stuList.get(1).name);
 		
 		
 		
