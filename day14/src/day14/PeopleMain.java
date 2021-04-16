@@ -32,12 +32,18 @@ public class PeopleMain {
 		peopleList.add(p3);
 				
 		for(int i = 0; i < peopleList.size(); i++) {
-			System.out.println(peopleList.get(i).getName());
-			System.out.println(peopleList.get(i).getrNumber());
-			System.out.println(peopleList.get(i).getAddress());
-			System.out.println(peopleList.get(i).getAge());
+//			System.out.println(peopleList.get(i).getName());
+//			System.out.println(peopleList.get(i).getrNumber());
+//			System.out.println(peopleList.get(i).getAddress());
+//			System.out.println(peopleList.get(i).getAge());
+			System.out.println(peopleList.get(i));
+			// 이렇게 쓸 수 있다.
 		}
 	
+		System.out.println(peopleList.get(0));
+		System.out.println(p);
+		System.out.println(p.toString());
+		//셋이 같은거
 		
 	}
 

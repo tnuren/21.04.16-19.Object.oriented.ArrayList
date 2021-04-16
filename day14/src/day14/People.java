@@ -10,9 +10,11 @@ public class People {
 	People(){
 		
 	}
-	
+	// 소스 > generate using field
 	People(String name , String rNumber , 
 			String address , int age){
+		// 부모클래스가 가지고 있는 생성자를 호출
+		super();
 		this.name = name;
 		this.rNumber = rNumber;
 		this.address = address;
@@ -20,6 +22,7 @@ public class People {
 		
 	}
 
+	// 소스 > getter , setter 
 	public String getName() {
 		return name;
 	}
@@ -51,6 +54,16 @@ public class People {
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+	// 소스 > toString 
+	// 용도는 거의 출력용임
+	@Override
+	public String toString() {
+		return "People [name=" + name + ", rNumber=" + rNumber + ", address=" + address + ", age=" + age + "]";
+	}
+	
+	
+	
 	
 	
 }
