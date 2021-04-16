@@ -12,15 +12,37 @@ public class StudentMain {
 		s.phone = "010-1111-2222";
 		s.address = "인천";
 		
-		List<String> list = new ArrayList<String>();
-		list.add(s.name);
-		list.add(s.phone);
-		list.add(s.address);
+						
+//		List<String> list = new ArrayList<String>();
+//		list.add(s.name);
+//		list.add(s.phone);
+//		list.add(s.address);
+//		
+//		System.out.println(list);
 		
-		System.out.println(list);
+		
+		Student s2 = new Student("학생2" , "010-2222-1111" , "서울");
+		
+		// Student 객체를 ArrayList에 저장하기.
+		// Student 객체를 담을 수 있는 ArrayList 필요
+		
+		List<Student> stuList = new ArrayList<Student>();
+		
+		stuList.add(s);
+		stuList.add(s2);
+		
+		// stuList의 0번 인덱스에 저장한 s 의 name값 출력해보기
+		System.out.println(stuList.get(0).name);
+		System.out.println(stuList.get(1).name);
+	
+		String var1 = stuList.get(0).name;
+		System.out.println(var1);
+		
+		stuList.get(1).name = "학생2이름변경";
+		System.out.println(stuList.get(1).name);
 		
 		
-
+		
 	}
 
 }
