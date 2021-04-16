@@ -40,9 +40,9 @@ public class PeopleMain {
 			// 이렇게 쓸 수 있다.
 		}
 	
-		System.out.println(peopleList.get(0));
-		System.out.println(p);
-		System.out.println(p.toString());
+//		System.out.println(peopleList.get(0));
+//		System.out.println(p);
+//		System.out.println(p.toString());
 		//셋이 같은거
 		
 	}

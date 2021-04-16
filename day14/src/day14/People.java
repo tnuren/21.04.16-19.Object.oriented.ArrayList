@@ -10,7 +10,7 @@ public class People {
 	People(){
 		
 	}
-	// 소스 > generate using field
+	// 소스 => generate constructor using field
 	People(String name , String rNumber , 
 			String address , int age){
 		// 부모클래스가 가지고 있는 생성자를 호출
@@ -22,7 +22,7 @@ public class People {
 		
 	}
 
-	// 소스 > getter , setter 
+	// 소스 => getter , setter 
 	public String getName() {
 		return name;
 	}
@@ -55,7 +55,7 @@ public class People {
 		this.age = age;
 	}
 
-	// 소스 > toString 
+	// 소스 => toString 
 	// 용도는 거의 출력용임
 	@Override
 	public String toString() {
