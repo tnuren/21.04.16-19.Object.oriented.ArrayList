@@ -1,17 +1,17 @@
 package day14;
 
-public class Bank {
-
-	private String clientNumber;
+public class BankDTO {
+	// DTO : Data Transfer Object => 데이터 전달을 위한 객체
+	private int clientNumber;
 	private String name;
 	private String accountNumber;
 	private int balance;
 	
-	Bank(){
-		
+	BankDTO(){
+
 	}
 	
-	Bank(String clientNumber,String name,
+	BankDTO(int clientNumber,String name,
 			String accountNumber , int balance	){
 		this.clientNumber = clientNumber;
 		this.name = name;
@@ -23,11 +23,11 @@ public class Bank {
 		
 	}
 
-	public String getClientNumber() {
+	public int getClientNumber() {
 		return clientNumber;
 	}
 
-	public void setClientNumber(String clientNumber) {
+	public void setClientNumber(int clientNumber) {
 		this.clientNumber = clientNumber;
 	}
 
