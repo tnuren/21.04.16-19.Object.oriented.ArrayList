@@ -2,6 +2,7 @@ package day14;
 
 public class BankDTO {
 	// DTO : Data Transfer Object => 데이터 전달을 위한 객체
+	// => 필드 , 기본생성자 , 매개변수있는생성자 , getter / setter , toString 을 가지고 시작함.
 	private int clientNumber;
 	private String name;
 	private String accountNumber;

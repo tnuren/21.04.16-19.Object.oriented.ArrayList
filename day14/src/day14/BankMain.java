@@ -14,6 +14,8 @@ public class BankMain {
 		String account = ""; // 계좌
 		int input = 0; // 입금
 		int balance = 0; // 총액
+		BankService bs = new BankService(); 
+		// 한개만 있으면 된다 서비스 클래스는.
 
 		while (run) {
 			System.out.println("----------------------------------------------------------------------");
@@ -53,42 +55,52 @@ public class BankMain {
 				list.add(b1);
 
 			} else if (select == 3) {
+								
+				list = bs.deposit(list); // 리턴값을 받아주는 좌변필요
+				
+				
 
-				System.out.print("계좌를 입력하세요 : ");
-				account = scan.next();
-
-				System.out.print("입금금액을 입력하세요 : ");
-				input = scan.nextInt();
-
-				for (int i = 0; i < list.size(); i++) {
-					if (account.equals(list.get(i).getAccountNumber())) {
-						balance = list.get(i).getBalance() + input;
-						list.get(i).setBalance(balance);
-					}
-				}
+//				System.out.print("계좌를 입력하세요 : ");
+//				account = scan.next();
+//
+//				System.out.print("입금금액을 입력하세요 : ");
+//				input = scan.nextInt();
+//
+//				for (int i = 0; i < list.size(); i++) {
+//					if (account.equals(list.get(i).getAccountNumber())) {
+//						balance = list.get(i).getBalance() + input;
+//						list.get(i).setBalance(balance);
+//					}
+//				}
 
 			} else if (select == 4) {
-				System.out.print("계좌를 입력하세요 : ");
-				account = scan.next();
-
-				System.out.print("출금금액을 입력하세요 : ");
-				int output = scan.nextInt();
-
-				for (int i = 0; i < list.size(); i++) {
-					if (account.equals(list.get(i).getAccountNumber())) {
-						balance = list.get(i).getBalance() - output;
-						list.get(i).setBalance(balance);
-					}
-					
-				}
+				
+				list = bs.withdraw(list);
+				
+				
+				
+				
+//				System.out.print("계좌를 입력하세요 : ");
+//				account = scan.next();
+//
+//				System.out.print("출금금액을 입력하세요 : ");
+//				int output = scan.nextInt();
+//
+//				for (int i = 0; i < list.size(); i++) {
+//					if (account.equals(list.get(i).getAccountNumber())) {
+//						balance = list.get(i).getBalance() - output;
+//						list.get(i).setBalance(balance);
+//					}
+//
+//				}
 			} else if (select == 5) {
 				for (int j = 0; j < list.size(); j++) {
 					System.out.println(list.get(j));
+				}
+			} else if (select == 6) {
+				System.out.println("종료합니다.");
+				run = false;
 			}
-		} else if (select == 6) {
-			System.out.println("종료합니다.");
-			
 		}
 	}
-}
 }
