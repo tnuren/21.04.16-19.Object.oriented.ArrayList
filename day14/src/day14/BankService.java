@@ -5,7 +5,9 @@ import java.util.*;
 public class BankService {
 // service 클래스 : 처리를 담당하는 클래스(비즈니스 클래스)
 	/*
-	 * 메소드이름 : deposit 매개변수 : list 리턴 : list (Main이 최신 데이터 필요하니까)
+	 * 메소드이름 : deposit 
+	 * 매개변수 : list 
+	 * 리턴 : list (Main이 최신 데이터 필요하니까)
 	 */
 	Scanner scan = new Scanner(System.in);
 
